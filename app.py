@@ -10,8 +10,8 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Load the datasets for rainfall, yield, and crop predictions
-data = pd.read_csv('../venv/crop.csv')  # For rainfall and yield (adjust path)
-crop_data = pd.read_csv('../venv/limited_top_ten_crops.csv')  # For crop prediction (adjust path)
+data = pd.read_csv('crop.csv')  # For rainfall and yield (adjust path)
+crop_data = pd.read_csv('limited_top_ten_crops.csv')  # For crop prediction (adjust path)
 
 # Preprocessing for Rainfall and Yield Prediction
 label_encoders = {}
